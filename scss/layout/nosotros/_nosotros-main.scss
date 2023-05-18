@@ -1,0 +1,13 @@
+.nosotros-main {
+    .secHist {
+        @include flex(column, nowrap, none, center);
+
+        .historia {
+            display: flex;
+            width: 80%;
+            margin: 40px;
+            align-items: center;
+            gap: 50px 100px;
+        }
+    }
+}

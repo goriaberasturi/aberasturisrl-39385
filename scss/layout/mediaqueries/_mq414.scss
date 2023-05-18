@@ -1,0 +1,45 @@
+@media (max-width: 414px) {
+
+    /* Clases index.html */
+
+    /* Header */
+
+    .index-header {
+        .h1bg {
+            h1 {
+                font-size: 22px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    /* Section 1 */
+
+    .index-main {
+        .section1 {
+            .article {
+                .artTxt1 p,
+                .artTxt2 p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .section3 {
+            .historia {
+                .historiaTxt {
+                    h2 {
+                        font-size: 25px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
