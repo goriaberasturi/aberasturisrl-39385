@@ -28,10 +28,45 @@ nav {
                 font-weight: 400;
                 color: white;
                 cursor: pointer;
+                transition: all 0.2s linear;
+
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 3px;
+                    background-color: $verdeGA;
+                    margin: auto;
+                    display: block;
+                    box-shadow: 0px 2px 5px black;
+                }
+
+                &:hover::after {
+                    width: 90%;
+                    transition: width 0.2s linear;
+                }
+
+                &:hover {
+                    color: $verdeGA;
+                    margin-top: 8px;
+                }
             }
 
-            &:hover {
-                transform: translateY(-3px);
+            a.active {
+                
+                &::after {
+                    content: "";
+                    width: 90%;
+                    height: 2px;
+                    background-color: white;
+                    margin: auto;
+                    display: block;
+                    box-shadow: 0px 2px 5px black;
+                    transition: all 0.2s linear;
+                }
+
+                &:hover:after {
+                    background-color: $verdeGA;
+                }
             }
         }
     }
@@ -98,13 +133,13 @@ nav {
             justify-content: center;
 
             button {
-                width: 80%;
+                width: 89.5%;
             }
         }
 
     }
 
     .dropdown_menu.open {
-        height: 310px;
+        height: 267px;
     }
 }

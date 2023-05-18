@@ -49,9 +49,37 @@ nav ul li a {
   font-weight: 400;
   color: white;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
-nav ul li:hover {
-  transform: translateY(-3px);
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #007135;
+  margin: auto;
+  display: block;
+  box-shadow: 0px 2px 5px black;
+}
+nav ul li a:hover::after {
+  width: 90%;
+  transition: width 0.2s linear;
+}
+nav ul li a:hover {
+  color: #007135;
+  margin-top: 8px;
+}
+nav ul li a.active::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  margin: auto;
+  display: block;
+  box-shadow: 0px 2px 5px black;
+  transition: all 0.2s linear;
+}
+nav ul li a.active:hover:after {
+  background-color: #007135;
 }
 nav button {
   padding: 5px 10px;
@@ -112,10 +140,10 @@ nav .dropdown_menu .navbarLink.navlog {
   justify-content: center;
 }
 nav .dropdown_menu .navbarLink.navlog button {
-  width: 80%;
+  width: 89.5%;
 }
 nav .dropdown_menu.open {
-  height: 310px;
+  height: 267px;
 }
 
 footer {
@@ -460,7 +488,7 @@ footer .redes .instagram a {
   width: 100%;
   height: 60%;
   background-size: cover;
-  background-position: left top;
+  background-position: center;
 }
 .catalogoRemate-main .catalogo .article1 a .selfcard .cardTxt {
   display: flex;
@@ -511,12 +539,22 @@ footer .redes .instagram a {
   justify-content: none;
   align-items: center;
 }
-.nosotros-main .secHist .historia {
+.nosotros-main .secHist .historiaNos {
   display: flex;
   width: 80%;
   margin: 40px;
   align-items: center;
   gap: 50px 100px;
+}
+.nosotros-main .secHist .historiaNos div {
+  display: grid;
+  gap: 10px;
+}
+.nosotros-main .secHist .historiaNos div h2 {
+  font-size: 30px;
+}
+.nosotros-main .secHist .historiaNos div h3 {
+  font-size: 20px;
 }
 
 /* cereales.html */
@@ -840,6 +878,24 @@ footer .redes .instagram a {
   .cereales-main .cereales_div_form form {
     width: 80%;
   }
+  /* Clases nosotros.html */
+  .nosotros-main .secHist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: none;
+    align-items: center;
+  }
+  .nosotros-main .secHist .historiaNos {
+    display: grid;
+    grid-template: repeat(2, auto)/1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .nosotros-main .secHist .historiaNos img {
+    align-self: center;
+    justify-self: center;
+  }
 }
 @media (max-width: 737px) {
   /* Clases index.html */
@@ -923,6 +979,34 @@ footer .redes .instagram a {
   }
   .index-main .section3 .historia .historiaTxt p {
     font-size: 12px;
+  }
+  /* Clases catalogoRemate.html */
+  .catalogoRemate-main .catalogo .article1 a {
+    max-width: 250px;
+    height: 300px;
+  }
+  .catalogoRemate-main .catalogo .article1 a .selfcard {
+    width: 100%;
+    height: 300px;
+  }
+  .catalogoRemate-main .catalogo .article1 a .selfcard .cardTxt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .catalogoRemate-main .catalogo .article1 a .selfcard .cardTxt h3 {
+    font-size: 20px;
+  }
+  .catalogoRemate-main .catalogo .article1 a .selfcard .cardTxt p {
+    font-size: 15px;
   }
 }
 @media (max-width: 342px) {

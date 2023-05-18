@@ -16,4 +16,21 @@
             }
         }
     }
+
+    /* Clases nosotros.html */
+
+    .nosotros-main {
+        .secHist {
+            @include flex(column, nowrap, none, center);
+    
+            .historiaNos {
+                @include grid(repeat(2, auto) / 1fr, center, center);
+
+                img {
+                    align-self: center;
+                    justify-self: center;
+                }
+            }
+        }
+    }
 }
