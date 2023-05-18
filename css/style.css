@@ -81,7 +81,6 @@ nav .dropdown_menu {
   top: 105px;
   width: 300px;
   height: 0px;
-  padding: 10px;
   background: rgba(133, 133, 133, 0.685);
   backdrop-filter: blur(7px);
   border-radius: 10px;
@@ -108,11 +107,15 @@ nav .dropdown_menu li a {
 nav .dropdown_menu li:hover {
   background: rgba(186, 186, 186, 0.316);
 }
-nav .dropdown_menu button {
-  width: 100%;
+nav .dropdown_menu .navbarLink.navlog {
+  display: flex;
+  justify-content: center;
+}
+nav .dropdown_menu .navbarLink.navlog button {
+  width: 80%;
 }
 nav .dropdown_menu.open {
-  height: 320px;
+  height: 310px;
 }
 
 footer {
