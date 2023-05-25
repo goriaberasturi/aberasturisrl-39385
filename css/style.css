@@ -585,6 +585,9 @@ footer .redes .instagram a {
   margin-top: 20px;
   padding: 20px 0px;
 }
+.cereales-main .cotizaciones iframe {
+  width: 320px;
+}
 .cereales-main .cereales_div {
   display: grid;
   width: 500px;
@@ -1007,6 +1010,16 @@ footer .redes .instagram a {
   }
   .catalogoRemate-main .catalogo .article1 a .selfcard .cardTxt p {
     font-size: 15px;
+  }
+  /* Clases cereales.html */
+  .cereales-main .cotizaciones iframe {
+    width: 250px;
+  }
+  .cereales-main .cereales_div_h1 h1 {
+    font-size: 38px;
+  }
+  .cereales-main .cereales_div {
+    width: 250px;
   }
 }
 @media (max-width: 342px) {
