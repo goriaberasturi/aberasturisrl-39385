@@ -963,6 +963,12 @@ footer .redes .instagram a {
     height: 650px;
   }
 }
+@media (max-width: 475px) {
+  /* Clases cereales.html */
+  .login-main .login_form {
+    width: 300px;
+  }
+}
 @media (max-width: 414px) {
   /* Clases index.html */
   /* Header */
@@ -1044,6 +1050,13 @@ footer .redes .instagram a {
   }
   .index-main .section3 .historia .historiaTxt p {
     font-size: 10px;
+  }
+  /* Clases cereales.html */
+  .login-main .login_form {
+    width: 280px;
+  }
+  .login-main .login_form .reset_create a, .login-main .login_form .reset_create p {
+    font-size: 13px;
   }
 }
 
