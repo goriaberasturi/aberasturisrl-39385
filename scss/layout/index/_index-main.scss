@@ -12,6 +12,11 @@
             width: 80%;
             height: 500px;
 
+            %artTxth2ph {
+                font-weight: 600;
+                color: white;
+            }
+
             .artTxt1 {
                 @include section1-Txt;
                 left: 0;
@@ -20,8 +25,7 @@
                     @include section1-Txt-div;
 
                     h2 {
-                        font-weight: 600;
-                        color: white;
+                        @extend %artTxth2ph;
                     }
                 }
 
@@ -33,24 +37,23 @@
                     @include card-Btn;
                 }
             }
-            
+
             .artTxt2 {
                 @include section1-Txt;
                 right: 0;
-                
+
                 div {
                     @include section1-Txt-div;
-                    
+
                     h2 {
-                        font-weight: 600;
-                        color: white;
+                        @extend %artTxth2ph;
                     }
                 }
-                
+
                 p {
                     padding: 15px;
                 }
-                
+
                 .cardButton {
                     @include card-Btn;
                 }
